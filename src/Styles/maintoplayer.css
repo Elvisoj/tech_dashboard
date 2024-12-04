@@ -1,0 +1,152 @@
+
+/****** boxes-wrapper ******/
+.boxes-wrapper{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "up up cp cp"
+    "anl anl anl ap";
+}
+.user-profile{
+    grid-area: up;
+}
+.create-post{
+    grid-area: cp;
+}
+.analysics{
+    grid-area: anl;
+}
+
+.box{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms ease;
+    background: var(--card-bg-clr);
+    color: var(--sec-tx-clr);
+}
+.box:hover{
+    scale: .95;
+    transition: 200ms ease;
+}
+
+
+/********** user-profile ********/
+.user-profile{
+    
+}
+.user-profile-container,
+.user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.user-details .user-icon{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/****** CREATE POST STYLING *****/
+.create-post{
+    
+}
+.create-post-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--pry-tx-clr);
+}
+.create-post-btn .icon img{
+    width: 90px;
+    height: 90px;
+    place-content: center;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--pry-tx-clr);
+}
+.create-post-btn .text{
+    margin-top: 10px;
+    color: var(--pry-tx-clr);
+    font-size: 1.3rem;
+}
+
+
+/********* ANALYSICS STYLING *******/
+.analysics {
+    
+}
+.analysics-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.analysics-container .pi-chart{}
+.analysics-container .pi-chart .chart{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(white 40%, transparent 40% 100%), conic-gradient( red 20%, blue 0 30%, aqua 0 60%, purple 0 80%, orange 0 95%, orangered 0);
+    margin-bottom: 10px;
+}
+
+.analysics-container .data{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.analysics-container .data p{
+    position: relative;
+}
+.analysics-container .data p::before{
+    position: absolute;
+    left: -12px;
+    top: 4px;
+    
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #000;
+}
+.analysics-container .left-data{
+    left: 10px;
+}
+.analysics-container .right-data{
+    
+    right: 10px;
+}
+
+/******* view-allpost-container ********/
+.view-allpost-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.view-allpost-container img{
+    width: 100px;
+}
+.view-allpost-container h2{
+    font-size: 1.3rem;
+    margin-top: 10px;
+}

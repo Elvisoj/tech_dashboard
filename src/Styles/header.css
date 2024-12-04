@@ -1,0 +1,36 @@
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "L M M M ";
+    
+    width: 100%;
+    padding: 20px 30px;
+    place-content: center;
+    font-size: 1.7rem;
+    font-family: 'Trebuchet MS';
+    position: relative;
+    z-index: 1000;
+
+}
+.logo-wrapper .logo{
+    color: var(--btn-clr);
+    cursor: none;
+}
+.logo-wrapper .logo span{
+    color: var(--logo-clr);
+}
+.menu-wrapper{
+    grid-area: M;
+    justify-items: end;
+}
+.menu-wrapper .menu img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.menu-wrapper .menu img:hover{
+    scale: .95;
+}

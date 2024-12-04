@@ -1,0 +1,74 @@
+:root{
+  --pry-bg-clr: #FFFFFF;
+  --sec-bg-clr: #faf8f5;
+  --bdr-clr: #e0e0e0;
+  --text-inactive-clr: #b0b0b0;
+  --btn-clr: #4a90e2;
+  --pry-text: #333333;
+  --highlight-pink: #ff6f61;
+  --logo-clr:#0efff3;
+
+  /* BOX SHADOWS */
+  --mixed-look-sh: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px rgba(255, 255, 255, 0.7), inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+  --raised-look-sh: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+  --full-raised-look-sh: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px rgba(255, 255, 255, 0.7), -5px -5px 10px rgba(0,0,0,0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+  --inset-look-sh: inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+  --btn-hv-sh: inset 3px 3px 6px rgba(0,0,0,0.15) -3px -3px 6px rgba(255,255,255,0.85);
+
+  /* FONT SIZE */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  width: 100%;
+  height: 100vh;
+  background: var(--pry-bg-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dashboard{
+  min-width: 800px;
+  width: 90%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background: var(--pry-bg-clr);
+  box-shadow: var(--full-raised-look-sh);
+  border-radius: 8px;
+  padding: 20px;
+  grid-template-areas: 
+  "header header header header header header"
+  "siderbar siderbar main main main main";
+  gap: 20px;
+  font-family: 'Trebuchet MS';
+  overflow: hidden;
+}
+
+.main-header{
+  grid-area: header;
+  background: var(--sec-bg-clr);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar{
+  grid-area: siderbar;
+  background: var(--sec-bg-clr);
+  border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-content-area{
+  grid-area: main;
+  background: var(--sec-bg-clr);
+  height: 100%;
+  overflow: hidden;
+}

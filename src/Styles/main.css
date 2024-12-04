@@ -1,0 +1,31 @@
+
+.main-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/****** LAYERS STYLING *******/
+.main-top-layer{
+    width: 100%;
+    height: 100%;
+    background: var(--sec-bg-clr);
+    
+    overflow: hidden scroll;
+    scrollbar-width: none;
+    display: block;
+}
+
+/****** TOP LAYERS STYLING *******/
+
+
+
+/****** LAYERS STYLING *******/
+.main-bottom-layer{    
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
